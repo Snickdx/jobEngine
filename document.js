@@ -1,10 +1,12 @@
 let count = 1;
-
 module.exports = class Document{
 
     constructor(mandatory = [], metaData={ name:`document${count++}`}){
-        this.requirements = [];
-        this.mandatory = mandatory;
+        this.requirements = {
+            mandatory,
+            combinations: []
+        }
+
         for(let prop in metaData){
             this[prop] = metaData[prop];
         }
@@ -21,16 +23,16 @@ module.exports = class Document{
     }
 
     addMandatory(term){
-        this.mandatory.add(term);
+        this.requirements.mandatory.push(term);
     }
 
     addComboRequirement(combo){
-        this.requirements.push(combo);
+        this.requirements.combinations.push(combo);
     }
 
     isQualified(terms){
         let qualified = false;
-        qualfied = this.mandatory.reduce((acc, mandTerm)=>acc && terms.includes(mandTerm), qualfied);
+        qualfied = this.requirements.mandatory.reduce((acc, mandTerm)=>acc && terms.includes(mandTerm), qualfied);
         if (!qualfied) return false;
 
         qualified = this.requirements.reduce((acc, req)=>{
