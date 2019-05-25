@@ -5,7 +5,7 @@ module.exports = class Document{
         this.requirements = {
             mandatory,
             combinations: []
-        }
+        };
 
         for(let prop in metaData){
             this[prop] = metaData[prop];
@@ -13,8 +13,8 @@ module.exports = class Document{
     }
 
     /**
-     * 
-     * @param {number} amt - The amt of terms to be matched in the list 
+     *
+     * @param {number} amt - The amt of terms to be matched in the list
      * @param {string[] | requirementObject[]} list - Array of terms or requirementObjects
      * @returns {requirementObject}
      */
@@ -23,16 +23,19 @@ module.exports = class Document{
     }
 
     addMandatory(term){
+	    if(this.requirements === null)throw 'No requirements exists on this object';
         this.requirements.mandatory.push(term);
     }
 
     addComboRequirement(combo){
+	    if(this.requirements === null)throw 'No requirements exists on this object';
+	    if(!('amt' in combo && 'list' in combo)) throw `${JSON.stringify(combo)} is an invalid combo`;
         this.requirements.combinations.push(combo);
     }
 
-    isQualified(terms){
+    isSatisfied(terms){
         let qualified = false;
-        qualfied = this.requirements.mandatory.reduce((acc, mandTerm)=>acc && terms.includes(mandTerm), qualfied);
+        qualified = this.requirements.mandatory.reduce((acc, mandTerm)=>acc && terms.includes(mandTerm), qualfied);
         if (!qualfied) return false;
 
         qualified = this.requirements.reduce((acc, req)=>{
@@ -43,4 +46,4 @@ module.exports = class Document{
         return qualified;
     }
 
-}
+};

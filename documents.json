@@ -1,0 +1,111 @@
+[
+  {
+    "requirements": {
+      "mandatory": [
+        "term8",
+        "term12",
+        "term3"
+      ],
+      "combinations": "[{\"amt\":0,\"list\":[]},{\"amt\":1,\"list\":[]}]"
+    },
+    "name": "document1"
+  },
+  {
+    "requirements": {
+      "mandatory": [
+        "term11",
+        "term6",
+        "term13"
+      ],
+      "combinations": "[{\"amt\":0,\"list\":[]},{\"amt\":1,\"list\":[]}]"
+    },
+    "name": "document2"
+  },
+  {
+    "requirements": {
+      "mandatory": [
+        "term6",
+        "term12"
+      ],
+      "combinations": "[{\"amt\":0,\"list\":[]},{\"amt\":0,\"list\":[]}]"
+    },
+    "name": "document3"
+  },
+  {
+    "requirements": {
+      "mandatory": [
+        "term11",
+        "term13"
+      ],
+      "combinations": "[{\"amt\":0,\"list\":[]},{\"amt\":0,\"list\":[]}]"
+    },
+    "name": "document4"
+  },
+  {
+    "requirements": {
+      "mandatory": [
+        "term9",
+        "term4",
+        "term10"
+      ],
+      "combinations": "[{\"amt\":1,\"list\":[]},{\"amt\":0,\"list\":[]}]"
+    },
+    "name": "document5"
+  },
+  {
+    "requirements": {
+      "mandatory": [
+        "term12",
+        "term13",
+        "term14",
+        "term3"
+      ],
+      "combinations": "[{\"amt\":0,\"list\":[]},{\"amt\":1,\"list\":[]}]"
+    },
+    "name": "document6"
+  },
+  {
+    "requirements": {
+      "mandatory": [
+        "term12",
+        "term14",
+        "term5"
+      ],
+      "combinations": "[{\"amt\":0,\"list\":[]},{\"amt\":1,\"list\":[]}]"
+    },
+    "name": "document7"
+  },
+  {
+    "requirements": {
+      "mandatory": [
+        "term3",
+        "term12",
+        "term13"
+      ],
+      "combinations": "[{\"amt\":0,\"list\":[]},{\"amt\":0,\"list\":[]}]"
+    },
+    "name": "document8"
+  },
+  {
+    "requirements": {
+      "mandatory": [
+        "term11",
+        "term10",
+        "term4",
+        "term12"
+      ],
+      "combinations": "[{\"amt\":1,\"list\":[]},{\"amt\":0,\"list\":[]}]"
+    },
+    "name": "document9"
+  },
+  {
+    "requirements": {
+      "mandatory": [
+        "term2",
+        "term6"
+      ],
+      "combinations": "[{\"amt\":1,\"list\":[]},{\"amt\":1,\"list\":[]}]"
+    },
+    "name": "document10"
+  }
+]
