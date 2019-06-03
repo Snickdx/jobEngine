@@ -1,6 +1,5 @@
 let Document = require('./document');
 let fs = require('fs');
-const Comb = require('js-combinatorics');
 let Sets = require('./sets');
 
 const MAX_COMBO_AMT = 3;
@@ -45,8 +44,6 @@ function generateDocuments(amt, terms){
     fs.writeFile('documents.json', JSON.stringify(documents, null, 2), 'utf8', _=>console.log("file written"));
 }
 
-
-
 //version 1 no nested combos
 // function generateDocuments(amt){
 // 	let documents = [];
@@ -79,8 +76,4 @@ function generateDocuments(amt, terms){
 // 	printDocuments(documents);
 // 	//fs.writeFile('documents.json', JSON.stringify(JSON.parse(JSON.stringify(documents)), null, 2), 'utf8', _=>console.log("file written"));
 // }
-
-let terms = ['term1', 'term2', 'term3', 'term4', 'term5', 'term6', 'term7', 'term8', 'term9', 'term10', 'term11', 'term12', 'term13', 'term14', 'term15', 'term16', 'term17', 'term18'];
-
-
-generateDocuments(20, ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M']);
+module.exports = {generateDocuments};

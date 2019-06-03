@@ -35,23 +35,6 @@ module.exports = class Document{
 	    if(amt >= list.length)throw `Amt ${amt} is not more than list [ ${list} ]length`;
         this.requirements.combinations.push({amt, list});
     }
-	
-	// addComboRequirement(amt, list){
-	// 	if(this.requirements === null)throw 'No requirements exists on this object';
-	// 	if(amt === undefined || list === undefined) throw `Invalid values for amt and list ${amt} ${list}`;
-	// 	if(this.requirements.combinations.length > 0){
-	// 		for(let combo of this.requirements.combinations){//corrects combo requirements which have a common member and same amt
-	// 			let intersect = Sets.intersection(combo.list, list);
-	// 			if(amt === combo.amt && intersect.length > 0){
-	// 				//console.log("merging combos :", this.requirements.combinations, {amt, list});
-	// 				let diff = Sets.difference(list, intersect);
-	// 				amt+= combo.amt;
-	// 				list = [...list, ...diff];
-	// 			}
-	// 		}
-	// 	}
-	// 	this.requirements.combinations.push({amt, list});
-	// }
     
     isSatisfied(terms){
         let qualified = false;

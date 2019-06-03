@@ -119,86 +119,6 @@ async function insertDocuments(progs){
 	return progs;
 }
 
-/**
- * @description - gets all the documents in the database
- * @returns {Promise<Array>} - array of document objects or null
- */
-async function getDocuments(){
-	let session = startSession();
-	let result = await session.run(`match (d:Document) return p order by p.name`);
-	session.close();
-	let progs = [];
-	if(result.records.length === 0 )return progs;
-	for(let i=0; i<result.records.length; i++){
-		let {csec_passes, cape_passes, ...prog} = result.records[i]._fields[0].properties;
-		prog = parseProperties(prog);
-		prog.id = result.records[i]._fields[0].identity.low;
-		progs.push(prog);
-	}
-	return progs;
-}
-
-/**
- * @description - geta document in the database by an id
- * @returns {Promise<Array>} - single document object or null
- */
-async function getDocumentById(id){
-	let session = startSession();
-	if(id === undefined)return [];
-	let result = await session.run(`match (d:Document) where Id(p)=${id} return p`);
-	session.close();
-	let progs = [];
-	if(result.records.length === 0 )return null;
-	for(let i=0; i<result.records.length; i++){
-		let  prog = result.records[i]._fields[0].properties;
-		prog.requirements = JSON.parse(prog.requirements);
-		prog.id = result.records[i]._fields[0].identity.low;
-		progs.push(prog);
-	}
-	return progs;
-}
-
-function deleteDocument(id){
-
-}
-
-/**
- * @description - gets all the terms in the database
- * @returns {Promise<Array>} - array of term objects or null
- */
-async function getTerms(){
-	let terms = [];
-	try{
-		let session = startSession();
-		let result = await session.run("match (t:Term) return {name:s.name, level:s.level, id:Id(s)} order by s.name");
-		if(result.records.length === 0 )return [];
-		for(let i=0; i<result.records.length; i++){
-			let {id, ...sub} = result.records[i]._fields[0];
-			sub.id = id.low;
-			terms.push(sub);
-		}
-		session.close();
-	}catch(e){
-		console.log(e);
-	}
-	return terms;
-}
-
-/**
- * @description queries a document from the db by name
- * @param name
- * @returns {Promise<*|Object>} the document object or null
- */
-async function getDocument(name){
-	let session = startSession();
-	let result = await session.run(`match (d:Document{name:'${name}'}) return p`);
-	session.close();
-	if(result.records.length === 0 )return null;
-	let prog= result.records[0]._fields[0].properties;
-	prog = prog.requirements = JSON.parse(prog.requirements);
-	prog.id = result.records[i]._fields[0].identity.low;
-	return prog;
-}
 
 /**
  * @description - gets all documents which requirements are met by the given term list
@@ -208,7 +128,7 @@ async function getDocument(name){
 async function reqSearch(terms){
 	let progs = [];
 	let session = startSession();
-	let arry = terms.splice(1).reduce(((acc, cur)=>`${acc}, `+`'${cur}'`), `["${terms[0]}"`)+`]`;
+	let arry = `${JSON.stringify(terms)}`;
 	let query = `MATCH (t:Term), (d:Document) WHERE t.name in ${arry}
 WITH collect(t) as query, d
 MATCH (d:Document)-[:requires]->(t:Term)
@@ -238,41 +158,28 @@ return d order by d.name`;
 }
 
 /**
- * @description Returns
- * @param sublist
- * @returns {Promise<*>}
- */
-async function getTermObjects(sublist){
-	return (await getTerms()).filter(sub=>sublist.includes(sub.name));
-}
-
-/**
- * @description  retruns true of a set of terms given can qualify for a given document
- * @param {Object[]} - sublist array of term objects
- * @param {Object} sublist[0] - term object
- * @param {String} sublist[0].name - name of term
- * @param {String} sublist[0].level=["CAPE"|"CSEC] -
+ * @description  returns true of a set of terms given can qualify for a given document
  * @param {Object} document - document object
+ * @param {String[]} terms[] - term object
  */
-function isQualified(sublist,{requirements}){
-	let subnames = [];
+function isSatisfied({requirements}, terms){
 	
 	//Checking Mandatory Requirements
 	let mandatory_met = requirements.mandatory.reduce(
-		(acc, sub)=> acc && subnames.includes(sub),
+		(acc, term)=> acc && terms.includes(term),
 		true
 	);
-	
+
 	//Checking Combo Requirements
 	let combos_met = true;
 	if(requirements.hasOwnProperty("combinations")){
 		requirements.combinations.forEach(combo=>{
-			let combo_amt = subnames.reduce((acc, cur)=>{ acc += combo.list.includes(cur); return acc;}, 0);
+			let combo_amt = terms.reduce((acc, cur)=>{ acc += combo.list.includes(cur); return acc;}, 0);
 			combos_met = combos_met && (combo.amt <= combo_amt )
 		})
 	}
 	let res =  mandatory_met && combos_met;
-	// if(!res)console.log(name, cape_met, csec_met, mandatory_met, combos_met);
+	//if(!res)console.log(name, cape_met, csec_met, mandatory_met, combos_met);
 	return res;
 }
 
@@ -299,4 +206,4 @@ function disconnect(){
 	driver.close();
 }
 
-module.exports = {clearDB, insertTerms, insertDocuments, reqSearch, disconnect};
+module.exports = {clearDocuments, clearDB, insertTerms, insertDocuments, reqSearch, disconnect, isSatisfied};
