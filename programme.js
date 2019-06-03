@@ -38,21 +38,21 @@ class Programme extends Doc{
 		this.careers = careers;
 	}
 	
-	// addComboRequirement(amt, list){
-	// 	if(this.requirements === null)throw 'No requirements exists on this object';
-	// 	if(this.requirements.combinations.length > 0){
-	// 		for(let combo of this.requirements.combinations){//corrects comborequirements which have a common member and same amt
-	// 			let intersect = intersection(combo.list, list);
-	// 			if(amt === combo.amt && intersect.length > 0){
-	// 				//console.log("merging combos :", this.requirements.combinations, {amt, list});
-	// 				let diff = difference(list, intersect);
-	// 				amt+= combo.amt;
-	// 				list = [...list, ...diff];
-	// 			}
-	// 		}
-	// 	}
-	// 	this.requirements.combinations.push({amt, list});
-	// }
+	addComboRequirement(amt, list){
+		if(this.requirements === null)throw 'No requirements exists on this object';
+		if(this.requirements.combinations.length > 0){
+			for(let combo of this.requirements.combinations){//corrects comborequirements which have a common member and same amt
+				let intersect = intersection(combo.list, list);
+				if(amt === combo.amt && intersect.length > 0){
+					//console.log("merging combos :", this.requirements.combinations, {amt, list});
+					let diff = difference(list, intersect);
+					amt+= combo.amt;
+					list = [...list, ...diff];
+				}
+			}
+		}
+		this.requirements.combinations.push({amt, list});
+	}
 	
 }
 

@@ -2,110 +2,652 @@
   {
     "requirements": {
       "mandatory": [
-        "term8",
-        "term12",
-        "term3"
+        "A",
+        "H",
+        "G"
       ],
-      "combinations": "[{\"amt\":0,\"list\":[]},{\"amt\":1,\"list\":[]}]"
+      "combinations": [
+        {
+          "amt": 1,
+          "list": [
+            "F",
+            "K"
+          ]
+        },
+        {
+          "amt": 2,
+          "list": [
+            "B",
+            "L",
+            "F"
+          ]
+        }
+      ]
     },
     "name": "document1"
   },
   {
     "requirements": {
       "mandatory": [
-        "term11",
-        "term6",
-        "term13"
+        "I",
+        "F",
+        "J"
       ],
-      "combinations": "[{\"amt\":0,\"list\":[]},{\"amt\":1,\"list\":[]}]"
+      "combinations": [
+        {
+          "amt": 1,
+          "list": [
+            "A",
+            "K"
+          ]
+        },
+        {
+          "amt": 2,
+          "list": [
+            "G",
+            "L",
+            "C"
+          ]
+        }
+      ]
     },
     "name": "document2"
   },
   {
     "requirements": {
       "mandatory": [
-        "term6",
-        "term12"
+        "F",
+        "G"
       ],
-      "combinations": "[{\"amt\":0,\"list\":[]},{\"amt\":0,\"list\":[]}]"
+      "combinations": [
+        {
+          "amt": 2,
+          "list": [
+            "C",
+            "I",
+            "J",
+            "E"
+          ]
+        },
+        {
+          "amt": 1,
+          "list": [
+            "I",
+            "A",
+            "K"
+          ]
+        },
+        {
+          "amt": 1,
+          "list": [
+            "C",
+            "D",
+            "H",
+            "J"
+          ]
+        },
+        {
+          "amt": 2,
+          "list": [
+            "D",
+            "E",
+            "L"
+          ]
+        }
+      ]
     },
     "name": "document3"
   },
   {
     "requirements": {
       "mandatory": [
-        "term11",
-        "term13"
+        "I",
+        "J"
       ],
-      "combinations": "[{\"amt\":0,\"list\":[]},{\"amt\":0,\"list\":[]}]"
+      "combinations": []
     },
     "name": "document4"
   },
   {
     "requirements": {
       "mandatory": [
-        "term9",
-        "term4",
-        "term10"
+        "B",
+        "K"
       ],
-      "combinations": "[{\"amt\":1,\"list\":[]},{\"amt\":0,\"list\":[]}]"
+      "combinations": [
+        {
+          "amt": 2,
+          "list": [
+            "A",
+            "D",
+            "E"
+          ]
+        },
+        {
+          "amt": 1,
+          "list": [
+            "H",
+            "C",
+            "A"
+          ]
+        },
+        {
+          "amt": 2,
+          "list": [
+            "L",
+            "G",
+            "F",
+            "H"
+          ]
+        },
+        {
+          "amt": 2,
+          "list": [
+            "G",
+            "E",
+            "L"
+          ]
+        }
+      ]
     },
     "name": "document5"
   },
   {
     "requirements": {
       "mandatory": [
-        "term12",
-        "term13",
-        "term14",
-        "term3"
+        "G",
+        "F"
       ],
-      "combinations": "[{\"amt\":0,\"list\":[]},{\"amt\":1,\"list\":[]}]"
+      "combinations": [
+        {
+          "amt": 1,
+          "list": [
+            "J",
+            "H"
+          ]
+        },
+        {
+          "amt": 2,
+          "list": [
+            "E",
+            "K",
+            "B",
+            "C"
+          ]
+        },
+        {
+          "amt": 2,
+          "list": [
+            "E",
+            "K",
+            "J"
+          ]
+        },
+        {
+          "amt": 2,
+          "list": [
+            "J",
+            "C",
+            "A",
+            "K"
+          ]
+        },
+        {
+          "amt": 2,
+          "list": [
+            "L",
+            "D",
+            "I"
+          ]
+        }
+      ]
     },
     "name": "document6"
   },
   {
     "requirements": {
       "mandatory": [
-        "term12",
-        "term14",
-        "term5"
+        "L",
+        "A"
       ],
-      "combinations": "[{\"amt\":0,\"list\":[]},{\"amt\":1,\"list\":[]}]"
+      "combinations": []
     },
     "name": "document7"
   },
   {
     "requirements": {
       "mandatory": [
-        "term3",
-        "term12",
-        "term13"
+        "I",
+        "B",
+        "A",
+        "E"
       ],
-      "combinations": "[{\"amt\":0,\"list\":[]},{\"amt\":0,\"list\":[]}]"
+      "combinations": [
+        {
+          "amt": 2,
+          "list": [
+            "J",
+            "G",
+            "D"
+          ]
+        }
+      ]
     },
     "name": "document8"
   },
   {
     "requirements": {
       "mandatory": [
-        "term11",
-        "term10",
-        "term4",
-        "term12"
+        "J",
+        "F"
       ],
-      "combinations": "[{\"amt\":1,\"list\":[]},{\"amt\":0,\"list\":[]}]"
+      "combinations": [
+        {
+          "amt": 1,
+          "list": [
+            "C",
+            "H",
+            "E",
+            "A"
+          ]
+        },
+        {
+          "amt": 2,
+          "list": [
+            "E",
+            "K",
+            "C"
+          ]
+        },
+        {
+          "amt": 2,
+          "list": [
+            "H",
+            "K",
+            "E",
+            "C"
+          ]
+        },
+        {
+          "amt": 1,
+          "list": [
+            "I",
+            "D"
+          ]
+        }
+      ]
     },
     "name": "document9"
   },
   {
     "requirements": {
       "mandatory": [
-        "term2",
-        "term6"
+        "G",
+        "H",
+        "A"
       ],
-      "combinations": "[{\"amt\":1,\"list\":[]},{\"amt\":1,\"list\":[]}]"
+      "combinations": []
     },
     "name": "document10"
+  },
+  {
+    "requirements": {
+      "mandatory": [
+        "G",
+        "C",
+        "K"
+      ],
+      "combinations": [
+        {
+          "amt": 2,
+          "list": [
+            "F",
+            "H",
+            "I"
+          ]
+        },
+        {
+          "amt": 2,
+          "list": [
+            "A",
+            "J",
+            "B"
+          ]
+        }
+      ]
+    },
+    "name": "document11"
+  },
+  {
+    "requirements": {
+      "mandatory": [
+        "A",
+        "J",
+        "E"
+      ],
+      "combinations": [
+        {
+          "amt": 2,
+          "list": [
+            "G",
+            "D",
+            "L",
+            "K"
+          ]
+        },
+        {
+          "amt": 1,
+          "list": [
+            "D",
+            "K"
+          ]
+        },
+        {
+          "amt": 2,
+          "list": [
+            "K",
+            "G",
+            "F",
+            "B"
+          ]
+        }
+      ]
+    },
+    "name": "document12"
+  },
+  {
+    "requirements": {
+      "mandatory": [
+        "L",
+        "G"
+      ],
+      "combinations": [
+        {
+          "amt": 1,
+          "list": [
+            "K",
+            "A"
+          ]
+        },
+        {
+          "amt": 1,
+          "list": [
+            "J",
+            "I",
+            "F"
+          ]
+        },
+        {
+          "amt": 1,
+          "list": [
+            "I",
+            "B"
+          ]
+        },
+        {
+          "amt": 2,
+          "list": [
+            "D",
+            "K",
+            "E",
+            "F"
+          ]
+        },
+        {
+          "amt": 2,
+          "list": [
+            "F",
+            "E",
+            "K"
+          ]
+        }
+      ]
+    },
+    "name": "document13"
+  },
+  {
+    "requirements": {
+      "mandatory": [
+        "G",
+        "A",
+        "C"
+      ],
+      "combinations": [
+        {
+          "amt": 2,
+          "list": [
+            "H",
+            "D",
+            "F"
+          ]
+        },
+        {
+          "amt": 1,
+          "list": [
+            "H",
+            "K",
+            "E",
+            "L"
+          ]
+        }
+      ]
+    },
+    "name": "document14"
+  },
+  {
+    "requirements": {
+      "mandatory": [
+        "L",
+        "G"
+      ],
+      "combinations": [
+        {
+          "amt": 2,
+          "list": [
+            "I",
+            "J",
+            "E"
+          ]
+        },
+        {
+          "amt": 1,
+          "list": [
+            "D",
+            "H",
+            "F"
+          ]
+        }
+      ]
+    },
+    "name": "document15"
+  },
+  {
+    "requirements": {
+      "mandatory": [
+        "L",
+        "J",
+        "H"
+      ],
+      "combinations": [
+        {
+          "amt": 2,
+          "list": [
+            "K",
+            "A",
+            "F"
+          ]
+        }
+      ]
+    },
+    "name": "document16"
+  },
+  {
+    "requirements": {
+      "mandatory": [
+        "C",
+        "G",
+        "A",
+        "I"
+      ],
+      "combinations": [
+        {
+          "amt": 1,
+          "list": [
+            "E",
+            "L",
+            "J"
+          ]
+        },
+        {
+          "amt": 2,
+          "list": [
+            "J",
+            "D",
+            "L"
+          ]
+        },
+        {
+          "amt": 1,
+          "list": [
+            "B",
+            "H"
+          ]
+        },
+        {
+          "amt": 2,
+          "list": [
+            "K",
+            "E",
+            "H"
+          ]
+        },
+        {
+          "amt": 1,
+          "list": [
+            "H",
+            "B",
+            "J"
+          ]
+        }
+      ]
+    },
+    "name": "document17"
+  },
+  {
+    "requirements": {
+      "mandatory": [
+        "C",
+        "G",
+        "D"
+      ],
+      "combinations": [
+        {
+          "amt": 1,
+          "list": [
+            "K",
+            "J",
+            "L",
+            "A"
+          ]
+        },
+        {
+          "amt": 1,
+          "list": [
+            "F",
+            "L",
+            "K"
+          ]
+        },
+        {
+          "amt": 1,
+          "list": [
+            "H",
+            "J",
+            "E",
+            "F"
+          ]
+        },
+        {
+          "amt": 2,
+          "list": [
+            "H",
+            "A",
+            "J"
+          ]
+        },
+        {
+          "amt": 1,
+          "list": [
+            "J",
+            "E",
+            "K"
+          ]
+        }
+      ]
+    },
+    "name": "document18"
+  },
+  {
+    "requirements": {
+      "mandatory": [
+        "I",
+        "L",
+        "E"
+      ],
+      "combinations": [
+        {
+          "amt": 1,
+          "list": [
+            "D",
+            "J"
+          ]
+        },
+        {
+          "amt": 1,
+          "list": [
+            "D",
+            "H"
+          ]
+        },
+        {
+          "amt": 1,
+          "list": [
+            "K",
+            "B",
+            "H",
+            "G"
+          ]
+        }
+      ]
+    },
+    "name": "document19"
+  },
+  {
+    "requirements": {
+      "mandatory": [
+        "I",
+        "G"
+      ],
+      "combinations": [
+        {
+          "amt": 2,
+          "list": [
+            "E",
+            "J",
+            "K"
+          ]
+        },
+        {
+          "amt": 1,
+          "list": [
+            "A",
+            "K",
+            "D",
+            "J"
+          ]
+        }
+      ]
+    },
+    "name": "document20"
   }
 ]

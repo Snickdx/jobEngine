@@ -11,6 +11,6 @@
   "license": "ISC",
   "dependencies": {
     "js-combinatorics": "^0.5.4",
-    "neo4j-driver": "^1.7.3"
+    "neo4j-driver": "^1.7.5"
   }
 }
