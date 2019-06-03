@@ -1,0 +1,2814 @@
+{
+  "query": [
+    "A",
+    "D",
+    "J",
+    "F",
+    "E",
+    "C",
+    "L",
+    "M",
+    "I"
+  ],
+  "false_negatives": [],
+  "false_positives": [],
+  "true_negatives": [
+    {
+      "name": "document100",
+      "requirements": {
+        "mandatory": [
+          "A",
+          "J",
+          "C"
+        ],
+        "combinations": [
+          {
+            "amt": 1,
+            "list": [
+              "L",
+              "F"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "H",
+              "D",
+              "I"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "L",
+              "H",
+              "B",
+              "F"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "K",
+              "G",
+              "E"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "E",
+              "D",
+              "G"
+            ]
+          }
+        ]
+      },
+      "id": 5048
+    },
+    {
+      "name": "document11",
+      "requirements": {
+        "mandatory": [
+          "A",
+          "K",
+          "G"
+        ],
+        "combinations": [
+          {
+            "amt": 2,
+            "list": [
+              "C",
+              "L",
+              "I",
+              "H"
+            ]
+          }
+        ]
+      },
+      "id": 4767
+    },
+    {
+      "name": "document12",
+      "requirements": {
+        "mandatory": [
+          "I",
+          "D",
+          "B"
+        ],
+        "combinations": []
+      },
+      "id": 5506
+    },
+    {
+      "name": "document13",
+      "requirements": {
+        "mandatory": [
+          "K",
+          "E",
+          "I"
+        ],
+        "combinations": []
+      },
+      "id": 4364
+    },
+    {
+      "name": "document14",
+      "requirements": {
+        "mandatory": [
+          "K",
+          "D",
+          "L"
+        ],
+        "combinations": []
+      },
+      "id": 3456
+    },
+    {
+      "name": "document15",
+      "requirements": {
+        "mandatory": [
+          "L",
+          "I"
+        ],
+        "combinations": [
+          {
+            "amt": 2,
+            "list": [
+              "A",
+              "E",
+              "B"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "F",
+              "K",
+              "J"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "C",
+              "H",
+              "K",
+              "B"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "B",
+              "A",
+              "E"
+            ]
+          }
+        ]
+      },
+      "id": 5886
+    },
+    {
+      "name": "document16",
+      "requirements": {
+        "mandatory": [
+          "B",
+          "C",
+          "E"
+        ],
+        "combinations": []
+      },
+      "id": 1553
+    },
+    {
+      "name": "document17",
+      "requirements": {
+        "mandatory": [
+          "L",
+          "C",
+          "G"
+        ],
+        "combinations": [
+          {
+            "amt": 1,
+            "list": [
+              "H",
+              "F",
+              "I",
+              "E"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "D",
+              "E",
+              "H",
+              "J"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "F",
+              "H",
+              "K"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "J",
+              "B",
+              "H",
+              "F"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "A",
+              "F"
+            ]
+          }
+        ]
+      },
+      "id": 4206
+    },
+    {
+      "name": "document18",
+      "requirements": {
+        "mandatory": [
+          "G",
+          "B"
+        ],
+        "combinations": []
+      },
+      "id": 4205
+    },
+    {
+      "name": "document19",
+      "requirements": {
+        "mandatory": [
+          "D",
+          "K",
+          "I",
+          "G"
+        ],
+        "combinations": [
+          {
+            "amt": 1,
+            "list": [
+              "H",
+              "L",
+              "J"
+            ]
+          }
+        ]
+      },
+      "id": 4281
+    },
+    {
+      "name": "document20",
+      "requirements": {
+        "mandatory": [
+          "H",
+          "J",
+          "G",
+          "A"
+        ],
+        "combinations": [
+          {
+            "amt": 2,
+            "list": [
+              "K",
+              "E",
+              "B",
+              "F"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "I",
+              "F"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "D",
+              "F",
+              "L"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "B",
+              "F",
+              "I"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "I",
+              "E",
+              "F",
+              "C"
+            ]
+          }
+        ]
+      },
+      "id": 5745
+    },
+    {
+      "name": "document21",
+      "requirements": {
+        "mandatory": [
+          "J",
+          "G"
+        ],
+        "combinations": []
+      },
+      "id": 5964
+    },
+    {
+      "name": "document22",
+      "requirements": {
+        "mandatory": [
+          "G",
+          "B",
+          "I",
+          "C"
+        ],
+        "combinations": [
+          {
+            "amt": 2,
+            "list": [
+              "H",
+              "E",
+              "A"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "L",
+              "H",
+              "K",
+              "F"
+            ]
+          }
+        ]
+      },
+      "id": 5630
+    },
+    {
+      "name": "document23",
+      "requirements": {
+        "mandatory": [
+          "K",
+          "I"
+        ],
+        "combinations": []
+      },
+      "id": 2770
+    },
+    {
+      "name": "document24",
+      "requirements": {
+        "mandatory": [
+          "I",
+          "A",
+          "K"
+        ],
+        "combinations": [
+          {
+            "amt": 1,
+            "list": [
+              "J",
+              "C",
+              "D"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "B",
+              "J",
+              "H"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "D",
+              "L"
+            ]
+          }
+        ]
+      },
+      "id": 4027
+    },
+    {
+      "name": "document25",
+      "requirements": {
+        "mandatory": [
+          "K",
+          "A"
+        ],
+        "combinations": [
+          {
+            "amt": 2,
+            "list": [
+              "H",
+              "J",
+              "C",
+              "E"
+            ]
+          }
+        ]
+      },
+      "id": 5328
+    },
+    {
+      "name": "document26",
+      "requirements": {
+        "mandatory": [
+          "A",
+          "C"
+        ],
+        "combinations": [
+          {
+            "amt": 2,
+            "list": [
+              "B",
+              "K",
+              "J"
+            ]
+          }
+        ]
+      },
+      "id": 6024
+    },
+    {
+      "name": "document27",
+      "requirements": {
+        "mandatory": [
+          "B",
+          "D",
+          "H"
+        ],
+        "combinations": []
+      },
+      "id": 2217
+    },
+    {
+      "name": "document28",
+      "requirements": {
+        "mandatory": [
+          "D",
+          "K",
+          "F"
+        ],
+        "combinations": [
+          {
+            "amt": 2,
+            "list": [
+              "E",
+              "H",
+              "I"
+            ]
+          }
+        ]
+      },
+      "id": 3108
+    },
+    {
+      "name": "document29",
+      "requirements": {
+        "mandatory": [
+          "G",
+          "B"
+        ],
+        "combinations": [
+          {
+            "amt": 1,
+            "list": [
+              "L",
+              "E"
+            ]
+          }
+        ]
+      },
+      "id": 6286
+    },
+    {
+      "name": "document3",
+      "requirements": {
+        "mandatory": [
+          "J",
+          "H",
+          "D"
+        ],
+        "combinations": [
+          {
+            "amt": 1,
+            "list": [
+              "I",
+              "K",
+              "F",
+              "L"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "B",
+              "F"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "F",
+              "G"
+            ]
+          }
+        ]
+      },
+      "id": 4481
+    },
+    {
+      "name": "document30",
+      "requirements": {
+        "mandatory": [
+          "K",
+          "E",
+          "J"
+        ],
+        "combinations": [
+          {
+            "amt": 1,
+            "list": [
+              "A",
+              "C"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "A",
+              "G",
+              "B",
+              "I"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "I",
+              "H",
+              "F"
+            ]
+          }
+        ]
+      },
+      "id": 4243
+    },
+    {
+      "name": "document31",
+      "requirements": {
+        "mandatory": [
+          "I",
+          "G",
+          "C",
+          "A"
+        ],
+        "combinations": [
+          {
+            "amt": 1,
+            "list": [
+              "F",
+              "L",
+              "K"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "B",
+              "E",
+              "F",
+              "J"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "L",
+              "H",
+              "F"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "F",
+              "L"
+            ]
+          }
+        ]
+      },
+      "id": 5629
+    },
+    {
+      "name": "document33",
+      "requirements": {
+        "mandatory": [
+          "L",
+          "A",
+          "B"
+        ],
+        "combinations": [
+          {
+            "amt": 2,
+            "list": [
+              "H",
+              "K",
+              "C"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "E",
+              "G"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "J",
+              "F",
+              "D",
+              "E"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "C",
+              "I",
+              "J"
+            ]
+          }
+        ]
+      },
+      "id": 2771
+    },
+    {
+      "name": "document34",
+      "requirements": {
+        "mandatory": [
+          "E",
+          "G"
+        ],
+        "combinations": [
+          {
+            "amt": 1,
+            "list": [
+              "J",
+              "L",
+              "K"
+            ]
+          }
+        ]
+      },
+      "id": 4785
+    },
+    {
+      "name": "document35",
+      "requirements": {
+        "mandatory": [
+          "K",
+          "J"
+        ],
+        "combinations": []
+      },
+      "id": 3160
+    },
+    {
+      "name": "document36",
+      "requirements": {
+        "mandatory": [
+          "H",
+          "C",
+          "I"
+        ],
+        "combinations": [
+          {
+            "amt": 1,
+            "list": [
+              "A",
+              "F",
+              "D"
+            ]
+          }
+        ]
+      },
+      "id": 5311
+    },
+    {
+      "name": "document37",
+      "requirements": {
+        "mandatory": [
+          "I",
+          "K",
+          "L"
+        ],
+        "combinations": []
+      },
+      "id": 4523
+    },
+    {
+      "name": "document39",
+      "requirements": {
+        "mandatory": [
+          "L",
+          "D"
+        ],
+        "combinations": [
+          {
+            "amt": 1,
+            "list": [
+              "H",
+              "E",
+              "G"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "C",
+              "I",
+              "B"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "F",
+              "G",
+              "H",
+              "K"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "E",
+              "B",
+              "I"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "B",
+              "H"
+            ]
+          }
+        ]
+      },
+      "id": 4539
+    },
+    {
+      "name": "document4",
+      "requirements": {
+        "mandatory": [
+          "G",
+          "C",
+          "F"
+        ],
+        "combinations": [
+          {
+            "amt": 1,
+            "list": [
+              "D",
+              "I",
+              "L",
+              "B"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "A",
+              "J",
+              "H"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "L",
+              "A"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "A",
+              "H",
+              "E"
+            ]
+          }
+        ]
+      },
+      "id": 5047
+    },
+    {
+      "name": "document40",
+      "requirements": {
+        "mandatory": [
+          "A",
+          "L",
+          "J",
+          "K"
+        ],
+        "combinations": [
+          {
+            "amt": 1,
+            "list": [
+              "G",
+              "I"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "G",
+              "B",
+              "F"
+            ]
+          }
+        ]
+      },
+      "id": 5927
+    },
+    {
+      "name": "document41",
+      "requirements": {
+        "mandatory": [
+          "L",
+          "B",
+          "C",
+          "D"
+        ],
+        "combinations": [
+          {
+            "amt": 1,
+            "list": [
+              "J",
+              "H",
+              "I"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "F",
+              "K",
+              "I",
+              "J"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "G",
+              "H",
+              "I",
+              "F"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "G",
+              "F",
+              "A"
+            ]
+          }
+        ]
+      },
+      "id": 5926
+    },
+    {
+      "name": "document42",
+      "requirements": {
+        "mandatory": [
+          "C",
+          "J",
+          "A",
+          "G"
+        ],
+        "combinations": [
+          {
+            "amt": 2,
+            "list": [
+              "E",
+              "D",
+              "H"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "K",
+              "F",
+              "I"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "I",
+              "D",
+              "L"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "H",
+              "K",
+              "D"
+            ]
+          }
+        ]
+      },
+      "id": 2216
+    },
+    {
+      "name": "document44",
+      "requirements": {
+        "mandatory": [
+          "H",
+          "D"
+        ],
+        "combinations": [
+          {
+            "amt": 2,
+            "list": [
+              "A",
+              "B",
+              "G"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "G",
+              "B",
+              "A"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "C",
+              "A"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "B",
+              "K",
+              "E"
+            ]
+          }
+        ]
+      },
+      "id": 2116
+    },
+    {
+      "name": "document45",
+      "requirements": {
+        "mandatory": [
+          "A",
+          "H"
+        ],
+        "combinations": [
+          {
+            "amt": 1,
+            "list": [
+              "L",
+              "G",
+              "I",
+              "C"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "D",
+              "E",
+              "L"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "K",
+              "B",
+              "J"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "C",
+              "D",
+              "K",
+              "I"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "F",
+              "L"
+            ]
+          }
+        ]
+      },
+      "id": 5388
+    },
+    {
+      "name": "document47",
+      "requirements": {
+        "mandatory": [
+          "L",
+          "G",
+          "B"
+        ],
+        "combinations": [
+          {
+            "amt": 1,
+            "list": [
+              "E",
+              "I"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "D",
+              "F",
+              "K",
+              "E"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "D",
+              "E"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "I",
+              "E",
+              "A",
+              "J"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "A",
+              "D",
+              "E",
+              "F"
+            ]
+          }
+        ]
+      },
+      "id": 5610
+    },
+    {
+      "name": "document49",
+      "requirements": {
+        "mandatory": [
+          "G",
+          "I"
+        ],
+        "combinations": [
+          {
+            "amt": 1,
+            "list": [
+              "J",
+              "B",
+              "K"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "A",
+              "H",
+              "C"
+            ]
+          }
+        ]
+      },
+      "id": 5109
+    },
+    {
+      "name": "document5",
+      "requirements": {
+        "mandatory": [
+          "G",
+          "A"
+        ],
+        "combinations": [
+          {
+            "amt": 2,
+            "list": [
+              "E",
+              "B",
+              "C",
+              "K"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "K",
+              "I",
+              "B"
+            ]
+          }
+        ]
+      },
+      "id": 3260
+    },
+    {
+      "name": "document50",
+      "requirements": {
+        "mandatory": [
+          "K",
+          "L",
+          "F",
+          "H"
+        ],
+        "combinations": [
+          {
+            "amt": 1,
+            "list": [
+              "I",
+              "E"
+            ]
+          }
+        ]
+      },
+      "id": 5884
+    },
+    {
+      "name": "document51",
+      "requirements": {
+        "mandatory": [
+          "G",
+          "A"
+        ],
+        "combinations": [
+          {
+            "amt": 1,
+            "list": [
+              "J",
+              "E",
+              "I"
+            ]
+          }
+        ]
+      },
+      "id": 4282
+    },
+    {
+      "name": "document53",
+      "requirements": {
+        "mandatory": [
+          "D"
+        ],
+        "combinations": [
+          {
+            "amt": 1,
+            "list": [
+              "B",
+              "G"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "K",
+              "A"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "B",
+              "J",
+              "H",
+              "A"
+            ]
+          }
+        ]
+      },
+      "id": 5586
+    },
+    {
+      "name": "document54",
+      "requirements": {
+        "mandatory": [
+          "H",
+          "E",
+          "B"
+        ],
+        "combinations": [
+          {
+            "amt": 2,
+            "list": [
+              "K",
+              "G",
+              "D",
+              "I"
+            ]
+          }
+        ]
+      },
+      "id": 2999
+    },
+    {
+      "name": "document56",
+      "requirements": {
+        "mandatory": [
+          "H",
+          "A"
+        ],
+        "combinations": [
+          {
+            "amt": 1,
+            "list": [
+              "L",
+              "J",
+              "E"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "C",
+              "J"
+            ]
+          }
+        ]
+      },
+      "id": 4947
+    },
+    {
+      "name": "document58",
+      "requirements": {
+        "mandatory": [
+          "F",
+          "H"
+        ],
+        "combinations": []
+      },
+      "id": 4540
+    },
+    {
+      "name": "document59",
+      "requirements": {
+        "mandatory": [
+          "G",
+          "B",
+          "K",
+          "H"
+        ],
+        "combinations": [
+          {
+            "amt": 2,
+            "list": [
+              "A",
+              "E",
+              "I",
+              "D"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "E",
+              "F",
+              "A"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "E",
+              "F",
+              "C"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "A",
+              "L",
+              "J"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "D",
+              "C",
+              "F",
+              "L"
+            ]
+          }
+        ]
+      },
+      "id": 4214
+    },
+    {
+      "name": "document6",
+      "requirements": {
+        "mandatory": [
+          "F",
+          "J"
+        ],
+        "combinations": [
+          {
+            "amt": 1,
+            "list": [
+              "B",
+              "G"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "C",
+              "I"
+            ]
+          }
+        ]
+      },
+      "id": 4522
+    },
+    {
+      "name": "document62",
+      "requirements": {
+        "mandatory": [
+          "K",
+          "E",
+          "G",
+          "D"
+        ],
+        "combinations": [
+          {
+            "amt": 2,
+            "list": [
+              "C",
+              "H",
+              "F"
+            ]
+          }
+        ]
+      },
+      "id": 5928
+    },
+    {
+      "name": "document64",
+      "requirements": {
+        "mandatory": [
+          "B",
+          "E",
+          "F"
+        ],
+        "combinations": []
+      },
+      "id": 4180
+    },
+    {
+      "name": "document65",
+      "requirements": {
+        "mandatory": [
+          "D",
+          "K",
+          "I"
+        ],
+        "combinations": []
+      },
+      "id": 2236
+    },
+    {
+      "name": "document68",
+      "requirements": {
+        "mandatory": [
+          "A",
+          "D",
+          "H"
+        ],
+        "combinations": [
+          {
+            "amt": 1,
+            "list": [
+              "F",
+              "C",
+              "J"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "G",
+              "I",
+              "K"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "E",
+              "B",
+              "K"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "C",
+              "E"
+            ]
+          }
+        ]
+      },
+      "id": 4181
+    },
+    {
+      "name": "document69",
+      "requirements": {
+        "mandatory": [
+          "G",
+          "F",
+          "L",
+          "E"
+        ],
+        "combinations": [
+          {
+            "amt": 2,
+            "list": [
+              "I",
+              "A",
+              "K"
+            ]
+          }
+        ]
+      },
+      "id": 4234
+    },
+    {
+      "name": "document7",
+      "requirements": {
+        "mandatory": [
+          "D",
+          "F",
+          "E",
+          "K"
+        ],
+        "combinations": [
+          {
+            "amt": 1,
+            "list": [
+              "H",
+              "C"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "I",
+              "J",
+              "C",
+              "H"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "B",
+              "G"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "H",
+              "C"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "A",
+              "I",
+              "B"
+            ]
+          }
+        ]
+      },
+      "id": 3943
+    },
+    {
+      "name": "document70",
+      "requirements": {
+        "mandatory": [
+          "I",
+          "A",
+          "J",
+          "G"
+        ],
+        "combinations": [
+          {
+            "amt": 2,
+            "list": [
+              "C",
+              "L",
+              "F"
+            ]
+          }
+        ]
+      },
+      "id": 4161
+    },
+    {
+      "name": "document71",
+      "requirements": {
+        "mandatory": [
+          "G",
+          "A"
+        ],
+        "combinations": [
+          {
+            "amt": 1,
+            "list": [
+              "L",
+              "E",
+              "I"
+            ]
+          }
+        ]
+      },
+      "id": 1261
+    },
+    {
+      "name": "document73",
+      "requirements": {
+        "mandatory": [
+          "B",
+          "D"
+        ],
+        "combinations": [
+          {
+            "amt": 1,
+            "list": [
+              "L",
+              "F"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "H",
+              "J",
+              "E"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "H",
+              "F",
+              "C"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "C",
+              "A",
+              "E",
+              "G"
+            ]
+          }
+        ]
+      },
+      "id": 5808
+    },
+    {
+      "name": "document74",
+      "requirements": {
+        "mandatory": [
+          "F",
+          "J"
+        ],
+        "combinations": [
+          {
+            "amt": 1,
+            "list": [
+              "B",
+              "K",
+              "H"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "H",
+              "K"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "H",
+              "K",
+              "G"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "C",
+              "A",
+              "L"
+            ]
+          }
+        ]
+      },
+      "id": 3665
+    },
+    {
+      "name": "document75",
+      "requirements": {
+        "mandatory": [
+          "B",
+          "K",
+          "A",
+          "G"
+        ],
+        "combinations": [
+          {
+            "amt": 2,
+            "list": [
+              "F",
+              "L",
+              "J"
+            ]
+          }
+        ]
+      },
+      "id": 3362
+    },
+    {
+      "name": "document76",
+      "requirements": {
+        "mandatory": [
+          "I",
+          "G"
+        ],
+        "combinations": [
+          {
+            "amt": 1,
+            "list": [
+              "C",
+              "K"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "K",
+              "L",
+              "A"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "E",
+              "K"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "L",
+              "D",
+              "A",
+              "H"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "L",
+              "D",
+              "A"
+            ]
+          }
+        ]
+      },
+      "id": 5108
+    },
+    {
+      "name": "document77",
+      "requirements": {
+        "mandatory": [
+          "K",
+          "G",
+          "L",
+          "E"
+        ],
+        "combinations": []
+      },
+      "id": 4769
+    },
+    {
+      "name": "document78",
+      "requirements": {
+        "mandatory": [
+          "F",
+          "K"
+        ],
+        "combinations": [
+          {
+            "amt": 1,
+            "list": [
+              "G",
+              "E",
+              "C"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "D",
+              "G",
+              "H"
+            ]
+          }
+        ]
+      },
+      "id": 5689
+    },
+    {
+      "name": "document8",
+      "requirements": {
+        "mandatory": [
+          "F",
+          "C",
+          "K",
+          "A"
+        ],
+        "combinations": [
+          {
+            "amt": 1,
+            "list": [
+              "G",
+              "H"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "J",
+              "D",
+              "E"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "E",
+              "D",
+              "B"
+            ]
+          }
+        ]
+      },
+      "id": 4280
+    },
+    {
+      "name": "document81",
+      "requirements": {
+        "mandatory": [
+          "I",
+          "K"
+        ],
+        "combinations": []
+      },
+      "id": 5147
+    },
+    {
+      "name": "document83",
+      "requirements": {
+        "mandatory": [
+          "H",
+          "K",
+          "I"
+        ],
+        "combinations": [
+          {
+            "amt": 2,
+            "list": [
+              "G",
+              "D",
+              "L"
+            ]
+          }
+        ]
+      },
+      "id": 5887
+    },
+    {
+      "name": "document84",
+      "requirements": {
+        "mandatory": [
+          "B",
+          "E"
+        ],
+        "combinations": [
+          {
+            "amt": 1,
+            "list": [
+              "J",
+              "A"
+            ]
+          }
+        ]
+      },
+      "id": 3363
+    },
+    {
+      "name": "document85",
+      "requirements": {
+        "mandatory": [
+          "K",
+          "H"
+        ],
+        "combinations": [
+          {
+            "amt": 2,
+            "list": [
+              "A",
+              "L",
+              "D",
+              "J"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "F",
+              "B",
+              "C",
+              "I"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "G",
+              "J"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "A",
+              "D",
+              "J"
+            ]
+          }
+        ]
+      },
+      "id": 5312
+    },
+    {
+      "name": "document86",
+      "requirements": {
+        "mandatory": [
+          "I",
+          "H",
+          "E"
+        ],
+        "combinations": [
+          {
+            "amt": 2,
+            "list": [
+              "J",
+              "F",
+              "K"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "B",
+              "J",
+              "D"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "F",
+              "L",
+              "A"
+            ]
+          }
+        ]
+      },
+      "id": 4787
+    },
+    {
+      "name": "document87",
+      "requirements": {
+        "mandatory": [
+          "A",
+          "K"
+        ],
+        "combinations": [
+          {
+            "amt": 1,
+            "list": [
+              "C",
+              "B",
+              "E"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "D",
+              "H"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "F",
+              "C",
+              "D",
+              "E"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "F",
+              "G",
+              "B"
+            ]
+          }
+        ]
+      },
+      "id": 908
+    },
+    {
+      "name": "document89",
+      "requirements": {
+        "mandatory": [
+          "F",
+          "L",
+          "B",
+          "E"
+        ],
+        "combinations": [
+          {
+            "amt": 2,
+            "list": [
+              "K",
+              "I",
+              "C"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "J",
+              "I",
+              "A",
+              "D"
+            ]
+          }
+        ]
+      },
+      "id": 5348
+    },
+    {
+      "name": "document9",
+      "requirements": {
+        "mandatory": [
+          "A",
+          "G",
+          "H"
+        ],
+        "combinations": [
+          {
+            "amt": 1,
+            "list": [
+              "K",
+              "J"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "D",
+              "E",
+              "C"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "E",
+              "I",
+              "C"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "D",
+              "F",
+              "E"
+            ]
+          }
+        ]
+      },
+      "id": 5609
+    },
+    {
+      "name": "document90",
+      "requirements": {
+        "mandatory": [
+          "H"
+        ],
+        "combinations": [
+          {
+            "amt": 2,
+            "list": [
+              "D",
+              "I",
+              "F",
+              "B"
+            ]
+          }
+        ]
+      },
+      "id": 3664
+    },
+    {
+      "name": "document92",
+      "requirements": {
+        "mandatory": [
+          "C",
+          "F",
+          "I",
+          "H"
+        ],
+        "combinations": [
+          {
+            "amt": 2,
+            "list": [
+              "K",
+              "E",
+              "D"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "G",
+              "B",
+              "D"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "B",
+              "A"
+            ]
+          }
+        ]
+      },
+      "id": 5666
+    },
+    {
+      "name": "document94",
+      "requirements": {
+        "mandatory": [
+          "K",
+          "C",
+          "E"
+        ],
+        "combinations": [
+          {
+            "amt": 1,
+            "list": [
+              "F",
+              "D"
+            ]
+          }
+        ]
+      },
+      "id": 4680
+    },
+    {
+      "name": "document95",
+      "requirements": {
+        "mandatory": [
+          "J",
+          "H",
+          "C",
+          "F"
+        ],
+        "combinations": []
+      },
+      "id": 6004
+    },
+    {
+      "name": "document96",
+      "requirements": {
+        "mandatory": [
+          "L",
+          "B",
+          "J"
+        ],
+        "combinations": [
+          {
+            "amt": 2,
+            "list": [
+              "E",
+              "F",
+              "D",
+              "I"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "I",
+              "K",
+              "G",
+              "C"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "D",
+              "E",
+              "K"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "K",
+              "A"
+            ]
+          }
+        ]
+      },
+      "id": 5389
+    },
+    {
+      "name": "document98",
+      "requirements": {
+        "mandatory": [
+          "F",
+          "H",
+          "L"
+        ],
+        "combinations": [
+          {
+            "amt": 2,
+            "list": [
+              "G",
+              "C",
+              "E",
+              "K"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "E",
+              "J"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "D",
+              "C",
+              "G",
+              "K"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "J",
+              "I",
+              "E"
+            ]
+          }
+        ]
+      },
+      "id": 4604
+    },
+    {
+      "name": "document99",
+      "requirements": {
+        "mandatory": [
+          "E",
+          "G",
+          "J"
+        ],
+        "combinations": [
+          {
+            "amt": 1,
+            "list": [
+              "F",
+              "I"
+            ]
+          }
+        ]
+      },
+      "id": 4660
+    }
+  ],
+  "true_positives": [
+    {
+      "name": "document1",
+      "requirements": {
+        "mandatory": [
+          "I",
+          "F"
+        ],
+        "combinations": []
+      },
+      "id": 5628
+    },
+    {
+      "name": "document10",
+      "requirements": {
+        "mandatory": [
+          "J",
+          "I"
+        ],
+        "combinations": [
+          {
+            "amt": 1,
+            "list": [
+              "G",
+              "C"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "K",
+              "E"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "G",
+              "D",
+              "C",
+              "K"
+            ]
+          }
+        ]
+      },
+      "id": 5387
+    },
+    {
+      "name": "document2",
+      "requirements": {
+        "mandatory": [
+          "D",
+          "E",
+          "J"
+        ],
+        "combinations": []
+      },
+      "id": 2096
+    },
+    {
+      "name": "document32",
+      "requirements": {
+        "mandatory": [
+          "J",
+          "A"
+        ],
+        "combinations": [
+          {
+            "amt": 1,
+            "list": [
+              "D",
+              "H",
+              "F"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "K",
+              "C",
+              "H"
+            ]
+          }
+        ]
+      },
+      "id": 6064
+    },
+    {
+      "name": "document38",
+      "requirements": {
+        "mandatory": [
+          "F",
+          "I"
+        ],
+        "combinations": []
+      },
+      "id": 4365
+    },
+    {
+      "name": "document43",
+      "requirements": {
+        "mandatory": [
+          "E",
+          "L"
+        ],
+        "combinations": [
+          {
+            "amt": 1,
+            "list": [
+              "D",
+              "A",
+              "H"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "F",
+              "B",
+              "J"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "A",
+              "D"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "D",
+              "K"
+            ]
+          }
+        ]
+      },
+      "id": 6025
+    },
+    {
+      "name": "document46",
+      "requirements": {
+        "mandatory": [
+          "A"
+        ],
+        "combinations": [
+          {
+            "amt": 1,
+            "list": [
+              "K",
+              "D",
+              "L"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "B",
+              "E",
+              "I"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "J",
+              "E",
+              "F"
+            ]
+          }
+        ]
+      },
+      "id": 5885
+    },
+    {
+      "name": "document48",
+      "requirements": {
+        "mandatory": [
+          "L",
+          "J"
+        ],
+        "combinations": []
+      },
+      "id": 5925
+    },
+    {
+      "name": "document52",
+      "requirements": {
+        "mandatory": [
+          "I",
+          "D"
+        ],
+        "combinations": []
+      },
+      "id": 4992
+    },
+    {
+      "name": "document55",
+      "requirements": {
+        "mandatory": [
+          "E"
+        ],
+        "combinations": []
+      },
+      "id": 5746
+    },
+    {
+      "name": "document57",
+      "requirements": {
+        "mandatory": [
+          "L",
+          "D"
+        ],
+        "combinations": [
+          {
+            "amt": 2,
+            "list": [
+              "F",
+              "J",
+              "K"
+            ]
+          }
+        ]
+      },
+      "id": 3663
+    },
+    {
+      "name": "document60",
+      "requirements": {
+        "mandatory": [
+          "E",
+          "F",
+          "J"
+        ],
+        "combinations": []
+      },
+      "id": 1081
+    },
+    {
+      "name": "document61",
+      "requirements": {
+        "mandatory": [
+          "E",
+          "A"
+        ],
+        "combinations": [
+          {
+            "amt": 1,
+            "list": [
+              "K",
+              "B",
+              "C"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "L",
+              "B",
+              "I",
+              "C"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "D",
+              "L",
+              "K",
+              "H"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "I",
+              "C"
+            ]
+          }
+        ]
+      },
+      "id": 3457
+    },
+    {
+      "name": "document63",
+      "requirements": {
+        "mandatory": [
+          "D",
+          "C"
+        ],
+        "combinations": []
+      },
+      "id": 5049
+    },
+    {
+      "name": "document66",
+      "requirements": {
+        "mandatory": [
+          "C",
+          "L",
+          "I"
+        ],
+        "combinations": []
+      },
+      "id": 5110
+    },
+    {
+      "name": "document67",
+      "requirements": {
+        "mandatory": [
+          "L",
+          "C"
+        ],
+        "combinations": [
+          {
+            "amt": 1,
+            "list": [
+              "E",
+              "A",
+              "B"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "G",
+              "D",
+              "H"
+            ]
+          }
+        ]
+      },
+      "id": 5349
+    },
+    {
+      "name": "document72",
+      "requirements": {
+        "mandatory": [
+          "F",
+          "L",
+          "D",
+          "E"
+        ],
+        "combinations": [
+          {
+            "amt": 1,
+            "list": [
+              "B",
+              "H",
+              "A",
+              "J"
+            ]
+          }
+        ]
+      },
+      "id": 3499
+    },
+    {
+      "name": "document79",
+      "requirements": {
+        "mandatory": [
+          "F",
+          "L",
+          "D"
+        ],
+        "combinations": [
+          {
+            "amt": 2,
+            "list": [
+              "B",
+              "I",
+              "E"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "E",
+              "K"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "G",
+              "E"
+            ]
+          },
+          {
+            "amt": 2,
+            "list": [
+              "J",
+              "A",
+              "C"
+            ]
+          }
+        ]
+      },
+      "id": 3946
+    },
+    {
+      "name": "document80",
+      "requirements": {
+        "mandatory": [
+          "C",
+          "E"
+        ],
+        "combinations": [
+          {
+            "amt": 1,
+            "list": [
+              "F",
+              "H",
+              "B"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "J",
+              "G"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "A",
+              "I"
+            ]
+          }
+        ]
+      },
+      "id": 5028
+    },
+    {
+      "name": "document82",
+      "requirements": {
+        "mandatory": [
+          "C",
+          "I"
+        ],
+        "combinations": [
+          {
+            "amt": 2,
+            "list": [
+              "E",
+              "K",
+              "A",
+              "G"
+            ]
+          },
+          {
+            "amt": 1,
+            "list": [
+              "D",
+              "E"
+            ]
+          }
+        ]
+      },
+      "id": 4081
+    },
+    {
+      "name": "document88",
+      "requirements": {
+        "mandatory": [
+          "E",
+          "A"
+        ],
+        "combinations": [
+          {
+            "amt": 2,
+            "list": [
+              "K",
+              "L",
+              "I"
+            ]
+          }
+        ]
+      },
+      "id": 1162
+    },
+    {
+      "name": "document91",
+      "requirements": {
+        "mandatory": [
+          "E",
+          "J"
+        ],
+        "combinations": []
+      },
+      "id": 4869
+    },
+    {
+      "name": "document93",
+      "requirements": {
+        "mandatory": [
+          "D",
+          "C"
+        ],
+        "combinations": [
+          {
+            "amt": 1,
+            "list": [
+              "L",
+              "K"
+            ]
+          }
+        ]
+      },
+      "id": 4107
+    },
+    {
+      "name": "document97",
+      "requirements": {
+        "mandatory": [
+          "A",
+          "I"
+        ],
+        "combinations": [
+          {
+            "amt": 1,
+            "list": [
+              "H",
+              "C",
+              "K"
+            ]
+          }
+        ]
+      },
+      "id": 4786
+    }
+  ]
+}

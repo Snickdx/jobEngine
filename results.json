@@ -1,0 +1,275 @@
+[
+  {
+    "name": "document58",
+    "requirements": {
+      "mandatory": [
+        "D",
+        "J",
+        "F"
+      ],
+      "combinations": []
+    },
+    "id": 4360
+  },
+  {
+    "name": "document76",
+    "requirements": {
+      "mandatory": [
+        "C",
+        "J"
+      ],
+      "combinations": []
+    },
+    "id": 4382
+  },
+  {
+    "name": "document36",
+    "requirements": {
+      "mandatory": [
+        "D",
+        "L"
+      ],
+      "combinations": []
+    },
+    "id": 4537
+  },
+  {
+    "name": "document100",
+    "requirements": {
+      "mandatory": [
+        "C",
+        "A"
+      ],
+      "combinations": []
+    },
+    "id": 4616
+  },
+  {
+    "name": "document20",
+    "requirements": {
+      "mandatory": [
+        "A",
+        "F",
+        "C",
+        "L"
+      ],
+      "combinations": []
+    },
+    "id": 4658
+  },
+  {
+    "name": "document61",
+    "requirements": {
+      "mandatory": [
+        "D",
+        "L",
+        "A"
+      ],
+      "combinations": []
+    },
+    "id": 5504
+  },
+  {
+    "name": "document22",
+    "requirements": {
+      "mandatory": [
+        "E",
+        "A"
+      ],
+      "combinations": [
+        {
+          "amt": 1,
+          "list": [
+            "H",
+            "C"
+          ]
+        },
+        {
+          "amt": 1,
+          "list": [
+            "H",
+            "B",
+            "F"
+          ]
+        }
+      ]
+    },
+    "id": 4002
+  },
+  {
+    "name": "document38",
+    "requirements": {
+      "mandatory": [
+        "A",
+        "D"
+      ],
+      "combinations": [
+        {
+          "amt": 1,
+          "list": [
+            "F",
+            "I"
+          ]
+        },
+        {
+          "amt": 1,
+          "list": [
+            "G",
+            "K",
+            "J"
+          ]
+        },
+        {
+          "amt": 1,
+          "list": [
+            "J",
+            "F"
+          ]
+        },
+        {
+          "amt": 2,
+          "list": [
+            "I",
+            "L",
+            "E"
+          ]
+        }
+      ]
+    },
+    "id": 3061
+  },
+  {
+    "name": "document42",
+    "requirements": {
+      "mandatory": [
+        "F",
+        "C"
+      ],
+      "combinations": [
+        {
+          "amt": 1,
+          "list": [
+            "H",
+            "E"
+          ]
+        }
+      ]
+    },
+    "id": 2841
+  },
+  {
+    "name": "document51",
+    "requirements": {
+      "mandatory": [
+        "C",
+        "D",
+        "A"
+      ],
+      "combinations": [
+        {
+          "amt": 1,
+          "list": [
+            "J",
+            "G"
+          ]
+        },
+        {
+          "amt": 2,
+          "list": [
+            "E",
+            "H",
+            "F"
+          ]
+        },
+        {
+          "amt": 2,
+          "list": [
+            "H",
+            "E",
+            "L"
+          ]
+        },
+        {
+          "amt": 1,
+          "list": [
+            "L",
+            "B",
+            "F"
+          ]
+        }
+      ]
+    },
+    "id": 5384
+  },
+  {
+    "name": "document90",
+    "requirements": {
+      "mandatory": [
+        "E",
+        "C"
+      ],
+      "combinations": [
+        {
+          "amt": 1,
+          "list": [
+            "H",
+            "J"
+          ]
+        },
+        {
+          "amt": 2,
+          "list": [
+            "A",
+            "J",
+            "G"
+          ]
+        },
+        {
+          "amt": 1,
+          "list": [
+            "F",
+            "D",
+            "L"
+          ]
+        },
+        {
+          "amt": 2,
+          "list": [
+            "J",
+            "D",
+            "F"
+          ]
+        },
+        {
+          "amt": 1,
+          "list": [
+            "K",
+            "A",
+            "L"
+          ]
+        }
+      ]
+    },
+    "id": 5305
+  },
+  {
+    "name": "document97",
+    "requirements": {
+      "mandatory": [
+        "F",
+        "D"
+      ],
+      "combinations": [
+        {
+          "amt": 2,
+          "list": [
+            "E",
+            "J",
+            "H"
+          ]
+        }
+      ]
+    },
+    "id": 5486
+  }
+]

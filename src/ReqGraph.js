@@ -1,4 +1,5 @@
 const neo4j = require('neo4j-driver').v1;
+const generator = require('./generator');
 const config = {
 	"dbhost":"bolt://localhost:7687",
 	"dbport":7687,
@@ -6,6 +7,7 @@ const config = {
 	"dbpass":"snickpass"
 };
 
+const NUM_DOCS = 100;
 
 const driver = neo4j.driver(config.dbhost, neo4j.auth.basic(config.dbuser, config.dbpass));
 
@@ -53,6 +55,10 @@ async function createDocument({name, requirements}){
 	return res;
 }
 
+
+async function getDocumentByName(name){
+
+}
 // match (n:Document{name:'document11'} )-[r]->(m) optional match (m)-[s]->(o) return *
 
 /**
@@ -183,6 +189,25 @@ function isSatisfied({requirements}, terms){
 	return res;
 }
 
+/**
+ * @description - gets all the documents in the database
+ * @returns {Promise<Array>} - array of document objects or null
+ */
+async function getDocuments(){
+	let session = startSession();
+	let result = await session.run(`match (d:Document) return d order by d.name`);
+	session.close();
+	let progs = [];
+	if(result.records.length === 0 )return progs;
+	for(let i=0; i<result.records.length; i++){
+		let prog = result.records[i]._fields[0].properties;
+		prog.requirements = JSON.parse(prog.requirements);
+		prog.id = result.records[i]._fields[0].identity.low;
+		progs.push(prog);
+	}
+	return progs;
+}
+
 async function clearDB(){
 	let session = startSession();
 	await session.run("match (n)-[r]->(m) delete r");
@@ -201,9 +226,15 @@ async function clearDocuments(){
 	return res;
 }
 
+async function initialize(documents=generator.generateDocuments(NUM_DOCS, ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M"]), terms= ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M"]){
+	
+	await clearDB();
+	await insertTerms(terms);
+	await insertDocuments(documents);
+}
 
 function disconnect(){
 	driver.close();
 }
 
-module.exports = {clearDocuments, clearDB, insertTerms, insertDocuments, reqSearch, disconnect, isSatisfied};
+module.exports = {clearDocuments, clearDB, insertTerms, insertDocuments, reqSearch, disconnect, isSatisfied, getDocuments, initialize};

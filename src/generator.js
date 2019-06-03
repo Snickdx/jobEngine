@@ -20,7 +20,7 @@ function printDocuments(documents){
  * @param amt
  * @param terms
  */
-function generateDocuments(amt, terms){
+function generateDocuments(amt, terms, save){
     let documents = [];
     for(let i=0; i<amt; i++){
         let numCombo = Sets.genNum(0, MAX_NUM_COMBOS);
@@ -41,7 +41,8 @@ function generateDocuments(amt, terms){
     }
     //printDocuments(documents);
 	// JSON.stringify(JSON.parse(JSON.stringify(documents))
-    fs.writeFile('documents.json', JSON.stringify(documents, null, 2), 'utf8', _=>console.log("file written"));
+    if(save)fs.writeFile('documents.json', JSON.stringify(documents, null, 2), 'utf8', _=>console.log("file written"));
+    return documents;
 }
 
 //version 1 no nested combos
