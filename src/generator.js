@@ -2,10 +2,10 @@ let Document = require('./document');
 let fs = require('fs');
 let Sets = require('./sets');
 
-const MAX_COMBO_AMT = 3;
-const MAX_NUM_COMBOS = 6;
-const MAX_MAND_SIZE = 5;
-const MAX_COMBO_SIZE = 5;
+const MAX_COMBO_AMT = 3;//max amt value for amt in a ocmbo
+const MAX_NUM_COMBOS = 6;//max num of combos per document
+const MAX_MAND_SIZE = 5;//max number of mandatory terms per document
+const MAX_COMBO_SIZE = 5;//max num of terms per combo
 
 
 function printDocuments(documents){
@@ -20,8 +20,9 @@ function printDocuments(documents){
  * @param amt
  * @param terms
  */
-function generateDocuments(amt, terms, save){
+function generateDocuments(amt, terms){
     let documents = [];
+    console.log('Generating ', amt, ' documents');
     for(let i=0; i<amt; i++){
         let numCombo = Sets.genNum(0, MAX_NUM_COMBOS);
         let mand = Sets.genSubset(terms, Sets.genNum(2, MAX_MAND_SIZE));
@@ -41,7 +42,7 @@ function generateDocuments(amt, terms, save){
     }
     //printDocuments(documents);
 	// JSON.stringify(JSON.parse(JSON.stringify(documents))
-    if(save)fs.writeFile('documents.json', JSON.stringify(documents, null, 2), 'utf8', _=>console.log("file written"));
+    fs.writeFile('documents.json', JSON.stringify(documents, null, 2), 'utf8', _=>console.log("file written"));
     return documents;
 }
 

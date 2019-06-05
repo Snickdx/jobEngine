@@ -7,8 +7,6 @@ const config = {
 	"dbpass":"snickpass"
 };
 
-const NUM_DOCS = 100;
-
 const driver = neo4j.driver(config.dbhost, neo4j.auth.basic(config.dbuser, config.dbpass));
 
 function startSession(){
@@ -43,7 +41,7 @@ async function createDocument({name, requirements}){
 	let session = startSession();
 	let promises = [];
 	let query = `MERGE (d:Document{name:'${name}', requirements:'${JSON.stringify(requirements)}'}) return d`;
-	let res = await session.run(query);
+	await session.run(query);
 	session.close();
 	await addMandatoryRequirements(name, requirements.mandatory);
 	if(requirements.hasOwnProperty('combinations')){
@@ -51,8 +49,7 @@ async function createDocument({name, requirements}){
 			promises.push(addComboRequirement(name, combo));
 		}
 	}
-	Promise.all(promises);
-	return res;
+	return await Promise.all(promises);
 }
 
 
@@ -112,17 +109,16 @@ async function insertTerms (terms){
 
 /**
  * @description Inserts an array of document objects into db
- * @param progs
+ * @param documents
  * @returns {Promise<result[]>} array containing result of individual createDocument calls
  */
-async function insertDocuments(progs){
-	progs = progs.map((p, i)=>{
-		console.log(`Creating document ${i+1}/${progs.length}`);
-		return createDocument(progs[i]);
-	});
-	progs = Promise.all(progs);
+async function insertDocuments(documents){
+	let i=1;
+	for (let document of documents){
+		console.log(`Creating document ${i++}/${documents.length}`);
+		await createDocument(document);
+	}
 	console.log("Documents created");
-	return progs;
 }
 
 
@@ -153,6 +149,7 @@ return d order by d.name`;
 	let result = await session.run(query);
 	session.close();
 	if(result.records.length === 0 )return [];
+	
 	for(let i=0; i<result.records.length; i++){
 		let rec = result.records[i]._fields[0].properties;
 		let prog= rec;
@@ -226,8 +223,9 @@ async function clearDocuments(){
 	return res;
 }
 
-async function initialize(documents=generator.generateDocuments(NUM_DOCS, ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M"]), terms= ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M"]){
+async function initialize(documents, terms=["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M"], amt){
 	
+	if(documents === undefined)documents=generator.generateDocuments(amt, terms);
 	await clearDB();
 	await insertTerms(terms);
 	await insertDocuments(documents);

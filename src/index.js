@@ -5,8 +5,6 @@ const ReqGraph = require('./ReqGraph');
 const fs = require('fs');
 
 
-
-
 async function main() {
 	await ReqGraph.initialize();
 	let docs =  await ReqGraph.reqSearch(query);
