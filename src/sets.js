@@ -1,8 +1,8 @@
 function intersection(A, B) {
-	var _intersection = [];
+	let _intersection = [];
 	let setA = new Set(A);
 	let setB = new Set(B);
-	for (var elem of setB) {
+	for (let elem of setB) {
 		if (setA.has(elem)) {
 			_intersection.push(elem);
 		}
@@ -10,8 +10,9 @@ function intersection(A, B) {
 	return _intersection;
 }
 
-//generate number between min and max
+//generate number between min and max inclusively
 function genNum(min=1, max=3) {
+	max++;
 	return parseInt(Math.random() * (max - min) + min);
 }
 

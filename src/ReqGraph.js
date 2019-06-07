@@ -52,7 +52,6 @@ async function createDocument({name, requirements}){
 	return await Promise.all(promises);
 }
 
-
 async function getDocumentByName(name){
 
 }
@@ -223,9 +222,7 @@ async function clearDocuments(){
 	return res;
 }
 
-async function initialize(documents, terms=["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M"], amt){
-	
-	if(documents === undefined)documents=generator.generateDocuments(amt, terms);
+async function initialize(documents, terms){
 	await clearDB();
 	await insertTerms(terms);
 	await insertDocuments(documents);
@@ -235,4 +232,4 @@ function disconnect(){
 	driver.close();
 }
 
-module.exports = {clearDocuments, clearDB, insertTerms, insertDocuments, reqSearch, disconnect, isSatisfied, getDocuments, initialize};
+module.exports = { reqSearch, disconnect, isSatisfied, getDocuments, initialize};

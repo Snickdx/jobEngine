@@ -1,28 +1,14 @@
 const ReqGraph = require('./ReqGraph');
 const fs = require('fs');
 const now = require("performance-now");
-let terms = require('../terms');
 let query = require('../query');
 
-async function main() {
-	let init = false;
-	for(let arg of process.argv){
-		//generate 1000 documents if -g flag present
-		if (arg === '-g') {
-			await ReqGraph.initialize(undefined, terms, 1000);
-			init = true;
-		}
-	}
+async function main(filename='report.json') {
 	
-	//use documents in documents.json as default
-	if(!init){
-		let documents = require('../documents');
-		await ReqGraph.initialize(documents, terms);
-	}
 	let start = now();
 	let results   =  await ReqGraph.reqSearch(query);
 	let end = now();
-	let time = (start-end).toFixed(3);
+	let time = (end-start).toFixed(3);
 	let documents = await ReqGraph.getDocuments();
 	let res_ids   = results.map(doc=>doc.id);
 	
@@ -41,9 +27,22 @@ async function main() {
 		if(!selected && !relevant)true_negatives.push(doc);
 	}
 	
-	let report = {query, time, false_negatives, false_positives, true_negatives, true_positives};
+	let report = {
+		query,
+		time,
+		stats:{
+			fn: false_negatives.length,
+			fp: false_positives.length,
+			tn: true_negatives.length,
+			tp: true_positives.length,
+		},
+		false_negatives,
+		false_positives,
+		true_negatives,
+		true_positives
+	};
 	ReqGraph.disconnect();
-	fs.writeFile('report.json', JSON.stringify(report, null, 2), 'utf8', ()=>console.log('Test Report Written'));
+	fs.writeFile(filename, JSON.stringify(report, null, 2), 'utf8', ()=>console.log('Test Report Written'));
 }
 
 main();

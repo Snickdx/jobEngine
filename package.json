@@ -1,20 +1,27 @@
 {
-  "name": "jobsearch",
-  "version": "1.0.0",
-  "description": "",
-  "main": "src/index.js",
-  "scripts": {
-    "generate": "node src/generator.js",
-    "test": "node src/test.js",
-    "test:g": "node src/test.js -g",
-    "start": "node src/index.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "js-combinatorics": "^0.5.4",
-    "neo4j-driver": "^1.7.5",
-    "performance-now": "^2.1.0"
-  }
+	"name": "jobsearch",
+	"version": "1.0.0",
+	"description": "",
+	"main": "src/index.js",
+	"scripts": {
+		"generate": "node src/generator.js",
+		"init": "node src/init.js",
+		"test": "node src/test.js",
+		"search": "node src/search.js"
+	},
+	"config": {
+		"maxCombos": 8,
+		"maxComboSize": 15,
+		"maxComboAmt": 10,
+		"maxMand": 5,
+		"documentAmt": 1000
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"js-combinatorics": "^0.5.4",
+		"neo4j-driver": "^1.7.5",
+		"performance-now": "^2.1.0"
+	}
 }
