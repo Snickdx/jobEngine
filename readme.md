@@ -1,4 +1,4 @@
-#Requirement Search Toolkit
+# Requirement Search Toolkit
 
  1. Define all terms in terms.json
  2. Define documents in documents.json
@@ -12,7 +12,7 @@
  3. Auto generate documents an run search with generator script
  4. Run the search script
 
-#Scripts
+# Scripts
 
 ## Generate Documents
 
@@ -30,18 +30,18 @@ Edit package.json config to change generator options
     $ npm run gnerate
 ```
  
- ##Initialize Graph
+ ## Initialize Graph
  ```
     $ npm run search:g
   ```
   
  
- ##Run Search
+ ## Run Search
   ```
     $ npm run search
    ```
  
- ##Run Test
+ ## Run Test
  Performs Requirement Search with documents.json, query.json and terms.json files and tests the results and writes report to report.json
  ```
     $ npm run test
