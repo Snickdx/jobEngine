@@ -10,11 +10,15 @@
 		"search": "node src/search.js"
 	},
 	"config": {
-		"maxCombos": 8,
-		"maxComboSize": 15,
-		"maxComboAmt": 10,
+		"maxCombos": 2,
+		"maxComboSize": 5,
+		"maxComboAmt": 2,
 		"maxMand": 5,
-		"documentAmt": 1000
+		"documentAmt": 1000,
+		"dbhost": "bolt://localhost:7687",
+		"dbport":  7687,
+		"dbuser": "neo4j",
+		"dbpass": "snickpass"
 	},
 	"keywords": [],
 	"author": "",

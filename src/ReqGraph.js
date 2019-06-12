@@ -1,10 +1,12 @@
 const neo4j = require('neo4j-driver').v1;
 const generator = require('./generator');
+
+
 const config = {
-	"dbhost":"bolt://localhost:7687",
-	"dbport":7687,
-	"dbuser":"neo4j",
-	"dbpass":"snickpass"
+	"dbhost": process.env.npm_package_config_dbhost || "bolt://localhost:7687",
+	"dbport": process.env.npm_package_config_dbport || 7687,
+	"dbuser": process.env.npm_package_config_dbuser || "neo4j",
+	"dbpass": process.env.npm_package_config_dbpass || "snickpass"
 };
 
 const driver = neo4j.driver(config.dbhost, neo4j.auth.basic(config.dbuser, config.dbpass));
