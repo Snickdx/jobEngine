@@ -7,6 +7,7 @@
 		"generate": "node src/generator.js",
 		"init": "node src/init.js",
 		"test": "node src/test.js",
+		"perftest": "node src/performance.js",
 		"search": "node src/search.js"
 	},
 	"config": {
@@ -16,7 +17,7 @@
 		"maxMand": 5,
 		"documentAmt": 1000,
 		"dbhost": "bolt://localhost:7687",
-		"dbport":  7687,
+		"dbport": 7687,
 		"dbuser": "neo4j",
 		"dbpass": "snickpass"
 	},
@@ -25,6 +26,7 @@
 	"license": "ISC",
 	"dependencies": {
 		"js-combinatorics": "^0.5.4",
+		"json-2-csv": "^3.5.5",
 		"neo4j-driver": "^1.7.5",
 		"performance-now": "^2.1.0"
 	}
